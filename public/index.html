@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganyu</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="icon" type="image/x-icon" href="ganyu-icon.png">
+    <script src="gl-matrix-min.js" defer></script>
+    <script src="import.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Project:/ GANYU</h1>
+    </div>
+    <div id="main-container">
+        <div id="spec-container">
+            <label for="width-input">Width: </label>
+            <input type="text" id="width-input"/>
+            
+            <label for="height-input">Height: </label>
+            <input type="text" id="height-input"/>
+
+            <button onclick="resizeCanvas()">Resize</button>
+            <button onclick="autoCanvasSize()">Auto</button>
+        </div>
+        <div id="canvas-container" tabindex="0"> 
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>
